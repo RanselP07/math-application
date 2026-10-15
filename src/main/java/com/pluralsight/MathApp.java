@@ -61,17 +61,19 @@ public class MathApp {
          * Question 5: Find and display the distance between the points (5, 10) and (85, 50)
          */
         // Declare and Initialize Variables
-        int coordinateX1 = 5;
-        int coordinateY1 = 10;
-        int coordinateX2 = 85;
-        int coordinateY2 = 50;
+        double coordinateX1 = 5;
+        double coordinateY1 = 10;
+        double coordinateX2 = 85;
+        double coordinateY2 = 50;
 
         // Solution
-        int distanceOfX = coordinateX2 - coordinateX1;
-        int distanceOfY = coordinateY2 - coordinateY1;
+        double distanceOfX = coordinateX2 - coordinateX1;
+        double distanceOfY = coordinateY2 - coordinateY1;
+
+        double distance = Math.sqrt(Math.pow(distanceOfX, 2) + Math.pow(distanceOfY, 2));
 
         // Display the Result
-        System.out.println("The distance between (" + coordinateX1 + ", " + coordinateY1 + ") and (" + coordinateX2 + ", " + coordinateY2 + ") is (" + distanceOfX + ", " + distanceOfY + ").");
+        System.out.println("The distance between (" + coordinateX1 + ", " + coordinateY1 + ") and (" + coordinateX2 + ", " + coordinateY2 + ") is " + distance);
 
         /**
          * Find and display the absolute (positive) value of a variable after it is set to -3.8
